@@ -1,0 +1,19 @@
+print('Решаем уравнение ax²-b•x=0')
+a = input('Введите значение a: ')
+b = input('Введите значение b: ')
+a = float(a)
+b = float(b)
+b = float(b * -1)
+c = float(0)
+discriminant = b**2 - 4*a*c
+print('Дискриминант = ' + str(discriminant))
+if discriminant < 0:
+    print('Корней нет')
+elif discriminant == 0:
+    x = -b/(2*a)
+    print('x = ' + str(x))
+else:
+    x1 = (-b + discriminant ** 0.5)/(2*a)
+    x2 = (-b - discriminant ** 0.5)/(2*a)
+    print('x1 = ' + str(x1))
+    print('x2 = ' + str(x2))
